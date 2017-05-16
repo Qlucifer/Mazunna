@@ -13,7 +13,7 @@ for i=1:length(y) % Troncare il segnale sotto il 3% del valore massimo
     if (abs(y(i)) < trunc_value) 
            y(i)=0;
     end
-    if(rem(i,d1*100) == 1 || i==1) %Prendo un valore su 10
+    if(rem(i,d1*100) == 1 || i==1) %Prendo un valore su X
         y1(j) = y(i);
         j=j+1;
     end
